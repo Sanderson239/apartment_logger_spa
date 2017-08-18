@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Footer from './components/Footer/Footer.js';
-import Header from './components/Header/Header.js';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Profiles from './components/Profiles/Profiles';
 
 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <Profiles />
         <Footer />
       </div>
     );
