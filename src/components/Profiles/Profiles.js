@@ -18,7 +18,7 @@ class Profiles extends Component {
     const { profileIds } = this.props;
     return (
       <div>
-        {`${profileIds}`}
+        { profileIds.map(profileId => <Profile key={ profileId } profileId={ profileId } />) }
       </div>
     );
   }
