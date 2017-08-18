@@ -8,10 +8,10 @@ class Header extends Component {
 render() {
     return (
       <header>
-      <div class="apartment-logger">
-        <h1 class="home-header">Apartment Logger</h1>
+      <div className="apartment-logger">
+        <h1 className="home-header">Apartment Logger</h1>
       </div>
-      <div class="nav-bar">
+      <div className="nav-bar">
         <ul>
           <li><h3><a>Home</a></h3></li>
           <li><h3><a>Profile</a></h3></li>
