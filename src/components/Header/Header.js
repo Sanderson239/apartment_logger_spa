@@ -12,7 +12,7 @@ render() {
         <h1 className="home-header">Apartment Logger</h1>
       </div>
       <div className="nav-bar">
-        <ul>
+        <ul className='nav-bar-list'>
           <li><h3><a>Home</a></h3></li>
           <li><h3><a>Profile</a></h3></li>
         </ul>

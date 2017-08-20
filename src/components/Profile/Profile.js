@@ -8,12 +8,15 @@ import { connect } from 'react-redux'
 class Profile extends Component {
 
   render() {
-    const { id } = this.props
+    const { id, name } = this.props
+    console.log(this.props);
 
       return (
-        <div>
-          hi
-        </div>
+        <div className="main-content-child apartment-list-parent">
+        <ul id="apartment-list">
+        <h2>List of Apartments</h2>
+        </ul>
+      </div>
       );
     }
   }
@@ -23,9 +26,9 @@ class Profile extends Component {
 
   const mapStateToProps = (state, ownProps) => {
     const profile = state.profiles.profilesById[ownProps.profileId]
-    const { id } = profile
+    const { name } = profile
     return {
-      id,
+      name,
     }
   }
 
