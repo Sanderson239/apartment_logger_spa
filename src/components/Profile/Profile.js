@@ -8,13 +8,13 @@ import { connect } from 'react-redux'
 class Profile extends Component {
 
   render() {
-    const { id, name } = this.props
+    const { profileId, name } = this.props
     console.log(this.props);
 
       return (
         <div className="main-content-child apartment-list-parent">
         <ul id="apartment-list">
-        <h2>List of Apartments</h2>
+        <h2>{`${profileId}`}</h2>
         </ul>
       </div>
       );
